@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    style="@style/CardViewStyle">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutHeightWrapWidthMatchStyling.Padding"
+    android:gravity="center_horizontal"
+        android:id="@+id/parentPanel"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/ivProfile"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <TextView
+        android:id="@+id/tvName"
+        style="@style/TextStyleNormal.Large.Bold" />
+
+    <TextView
+        android:id="@+id/tvHandle"
+        style="@style/TextStyleNormal" />
+
+    <RelativeLayout
+        style="@style/LayoutHeightWrapWidthMatchStyling"
+        android:gravity="center_vertical"
+        android:weightSum="3">
+
+        <TextView
+            android:id="@+id/tvFollowers"
+            style="@style/TextStyleNormal"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:maxLines="1" />
+
+        <TextView
+            android:id="@+id/tvFollowing"
+            style="@style/TextStyleNormal"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@+id/tvFollowers"
+            android:ellipsize="end"
+            android:maxLines="1" />
+
+        <TextView
+            android:id="@+id/btFollow"
+            style="@style/TextStyleNormal.Small"
+            android:layout_alignParentRight="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="@dimen/padding_small" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvAbout"
+        style="@style/TextStyleNormal.Small.Gray"
+        android:layout_width="match_parent"
+        />
+
+
+</LinearLayout>
+    </android.support.v7.widget.CardView>
