@@ -9,7 +9,7 @@ import android.view.ViewGroup;
 import java.util.List;
 
 /**
- * Created by lakshaygirdhar on 22/3/16.
+ * Created by musharib ali on 22/3/16.
  */
 public class BaseAdapter<S, T extends RecyclerView.ViewHolder> extends RecyclerView.Adapter<T> {
 
